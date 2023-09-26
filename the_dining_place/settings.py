@@ -31,7 +31,8 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 DEBUG = True
 
 ALLOWED_HOSTS = ['8000-tamassomi-thediningplac-s3khjchph8r.ws-eu105.gitpod.io',
-                 'TamasSomi.herokuapp.com', 'localhost']
+                 'TamasSomi.herokuapp.com', 'localhost',
+                 'the-dining-place-242cd25ddaad.herokuapp.com']
 
 
 # Application definition

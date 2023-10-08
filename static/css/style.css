@@ -1,0 +1,26 @@
+header {
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: bisque;
+}
+
+.menu {
+    background-color: blanchedalmond;
+}
+
+.bg-image {
+    background: url('../docs/restaurant.png') no-repeat center center;
+    min-height: 50vh;
+    background-size: cover;
+    width: 100%;
+}
+
+.hero-text{
+    background-color: rgba(255, 255, 255, 0.2); 
+    padding: 10px;
+    backdrop-filter: blur(5px);
+    border-radius: 10px;
+}

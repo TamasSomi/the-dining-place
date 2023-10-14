@@ -1,1 +1,14 @@
 {% extends "base.html" %}
+
+{% block content %}
+    <h2>My Bookings</h2>
+    
+    <!-- Display any existing bookings or information -->
+
+    <h3>Book a table</h3>
+    <form method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        {{ booking_form.as_p }}
+        <button type="submit">Submit</button>
+    </form>
+{% endblock %}

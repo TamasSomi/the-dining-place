@@ -1,11 +1,26 @@
 from django.shortcuts import render, redirect
 from django.http import HttpResponse
 from django.contrib.auth.decorators import login_required
+from .forms import BookingForm
 
 
 @login_required
 def dashboard(request):
-    return render(request, 'dashboard.html')
+    if request.method == 'POST':
+        form = BookingForm(request.POST)
+        if form.is_valid():
+            form.save()
+
+            return redirect('booking_success')
+
+    else:
+        
+        booking_form = BookingForm()
+
+        form_context = {
+            'booking_form': booking_form,
+        }
+    return render(request, 'dashboard.html', form_context)
 
 
 def index(request):

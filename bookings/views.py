@@ -25,3 +25,7 @@ def dashboard(request):
 
 def index(request):
     return render(request, 'index.html')
+
+
+def booking_success(request):
+    return render(request, 'booking_success.html')

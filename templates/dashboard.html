@@ -13,6 +13,17 @@
                     Date & Time: {{ booking.date_time }}<br>
                     Pax: {{ booking.pax }}<br>
                     Comments: {{ booking.comments }}<br>
+
+                    <!-- Delete button -->
+                    <form method="post" action="{% url 'delete_booking' booking.pk %}">
+                        {% csrf_token %}
+                        <button type="submit" class="link-button">Delete</button>
+                    </form>
+
+                    <!-- Edit button -->
+                    <form method="get" action="{% url 'edit_booking' booking.pk %}">
+                        <button type="submit" class="link-button">Edit</button>
+                    </form>
                 </li>
             {% endfor %}
         </ul>

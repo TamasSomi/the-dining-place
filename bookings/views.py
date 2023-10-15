@@ -15,9 +15,11 @@ def dashboard(request):
         if form.is_valid():
             form.save()
             return redirect('booking_success')
-            # test
         else:
-            booking_form = BookingForm(user=request.user)
+            form_context = {
+                'booking_form': form,
+                'bookings': bookings,
+            }
 
     else:
         booking_form = BookingForm(user=request.user)
@@ -61,4 +63,6 @@ def edit_booking(request, booking_id):
     else:
         form = BookingForm(instance=booking)
 
-    return render(request, 'edit_booking.html', {'form': form, 'booking': booking})
+    return render(
+        request, 'edit_booking.html', {'form': form, 'booking': booking}
+        )

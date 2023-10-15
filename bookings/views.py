@@ -8,16 +8,18 @@ from .forms import BookingForm
 @login_required
 def dashboard(request):
     form_context = {}
-
     bookings = Booking.objects.filter(user=request.user)
+
     if request.method == 'POST':
         form = BookingForm(request.POST, user=request.user)
         if form.is_valid():
             form.save()
-
             return redirect('booking_success')
+            # test
+        else:
+            booking_form = BookingForm(user=request.user)
 
-    else:       
+    else:
         booking_form = BookingForm(user=request.user)
         form_context = {
             'booking_form': booking_form,

@@ -9,5 +9,4 @@ class Booking(models.Model):
     phone_number = models.CharField(max_length=13)
     date_time = models.DateTimeField()
     pax = models.IntegerField()
-    comments = models.TextField()
-    
+    comments = models.TextField(blank=True)

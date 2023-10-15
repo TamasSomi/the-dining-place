@@ -2,13 +2,30 @@
 
 {% block content %}
     <h2>My Bookings</h2>
-    
+
+    {% if bookings %}
+        <ul>
+            {% for booking in bookings %}
+                <li>
+                    Name: {{ booking.name }}<br>
+                    Email: {{ booking.email }}<br>
+                    Phone Number: {{ booking.phone_number }}<br>
+                    Date & Time: {{ booking.date_time }}<br>
+                    Pax: {{ booking.pax }}<br>
+                    Comments: {{ booking.comments }}<br>
+                </li>
+            {% endfor %}
+        </ul>
+    {% else %}
+        <p>You do not have any bookings at the moment.</p>
+    {% endif %}
     <!-- Display any existing bookings or information -->
 
     <h3>Book a table</h3>
     <form method="post" enctype="multipart/form-data">
         {% csrf_token %}
         {{ booking_form.as_p }}
+        {{ booking_form.pax.errors }}
         <button type="submit">Submit</button>
     </form>
 {% endblock %}

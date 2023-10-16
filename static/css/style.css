@@ -4,11 +4,10 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: bisque;
 }
 
-.menu {
-    background-color: blanchedalmond;
+body{
+    background-color: #e1e8f0;
 }
 
 .bg-image {
@@ -36,4 +35,8 @@ footer {
 
 .margin-bottom {
     margin-bottom: 10vh;
+}
+
+.navbar a {
+    color: #e1e8f0 !important;
 }

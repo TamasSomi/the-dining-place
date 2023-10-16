@@ -19,3 +19,17 @@ class BookingForm(forms.ModelForm):
 
         if user:
             self.fields['user'].queryset = User.objects.filter(pk=user.pk)
+    
+    def clean(self):
+        cleaned_data = super().clean()
+        date_time = cleaned_data.get('date_time')
+        user = cleaned_data.get('user')
+
+        if date_time and user:
+            existing_reservation = Booking.objects.filter(user=user, date_time=date_time)
+
+            if self.instance and self.instance.pk:
+                existing_reservation = existing_reservation.exclude(pk=self.instance.pk)
+
+            if existing_reservation.exists():
+                raise forms.ValidationError("You already have a reservation for this time.")

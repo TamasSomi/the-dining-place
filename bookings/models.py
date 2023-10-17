@@ -11,7 +11,10 @@ def validate_datetime(value):
 
 def validate_pax(value):
     if value < 1 or value > 20:
-        raise ValidationError("You can not book a table for less than 1 person or more than 20 people")
+        raise ValidationError(
+            """You can not book a table for less than 1 person,
+            or more than 20 people"""
+        )
 
 
 class Booking(models.Model):

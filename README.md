@@ -1,6 +1,7 @@
 # The Dining Place #
 
-[Click here to visit the live page.](https://battleships-game-ts.herokuapp.com/)
+[Click here to visit the live page.](https://the-dining-place-242cd25ddaad.herokuapp.com/)
+
 
 This page is a fictive restaurants page with registration and booking options. It was built with learning purposes.
 
@@ -34,6 +35,13 @@ This page is a fictive restaurants page with registration and booking options. I
 * The booking form is validated, so the user can not book a table with any invalid data.
 
 
+## Future Features ##
+
+* Fast login with Facebook or Google.
+
+* Email sent with the details after booking a table.
+
+
 ## Planning ##
 
  The data model will define a 'Booking' class with the following fields:
@@ -50,5 +58,20 @@ This page is a fictive restaurants page with registration and booking options. I
 
  * 'pax': A positive integer field that represents the number of people for the booking.
 
- * 'comments': A text field for any additional information, notes related to th booking. 
+ * 'comments': A text field for any additional information, notes related to th booking.
+
+
+## Technology Used ##
+
+Used technologies during development:
+
+* [Github](https://github.com/)
+* [Gitpod](https://www.gitpod.io/)
+* [Heroku](https://dashboard.heroku.com/)
+* [Django](https://www.djangoproject.com/)
+* [Django Crispy Forms](https://django-crispy-forms.readthedocs.io/en/latest/#)
+* [Django Allauth](https://docs.allauth.org/en/latest/#)
+* [Whitenoise](https://whitenoise.readthedocs.io/en/latest/#)
+* [Bootstrap](https://getbootstrap.com/)
+
 

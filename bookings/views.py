@@ -8,7 +8,7 @@ from .forms import BookingForm
 @login_required
 def dashboard(request):
     form_context = {}
-    bookings = Booking.objects.filter(user=request.user)
+    bookings = Booking.objects.filter(user=request.user).order_by('date_time')
 
     if request.method == 'POST':
         form = BookingForm(request.POST, user=request.user)

@@ -18,8 +18,9 @@ class BookingForm(forms.ModelForm):
         super(BookingForm, self).__init__(*args, **kwargs)
 
         if user:
-            self.fields['user'].initial = user 
+            self.fields['user'].initial = user
             self.fields['user'].queryset = User.objects.filter(pk=user.pk)
+            self.fields['user'].widget = forms.HiddenInput()
 
     # Check if booking already exists
     def clean(self):

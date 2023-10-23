@@ -40,3 +40,10 @@ footer {
 .navbar a {
     color: #e1e8f0 !important;
 }
+
+.navbar {
+    position: -webkit-sticky; /* For Safari */
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }

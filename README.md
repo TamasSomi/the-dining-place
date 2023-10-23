@@ -75,3 +75,27 @@ Used technologies during development:
 * [Bootstrap](https://getbootstrap.com/)
 
 
+## Manual Test ##
+
+| Summary          | Steps                    | Expected Results       | Result                 |
+| ----------------- | ------------------------- | ---------------------- | ---------------------- |
+|  Registration     | 1. Navigate to the        |1. The registration page is displayed. | 1. Pass.  |
+|                   | registration page.        |2. All fields accept valid input.      | 2. Pass.  |
+|                   | 2. Fill in all required.  |3. The user is redirected to the dashboard.| 3. Pass.|
+|                   | fields with valid data.    |                       |                      |
+|                   | 3. Click the register button.                   |                           |
+| ----------------- | ------------------------- | ---------------------- | ---------------------- |
+|  Login       | 1. When logged out, click  | 1. The login page is displayed. | 1. Pass.|
+|                 |       on the Login button.   | 2. All fields accept valid input.| 2.Pass.|
+|                   |  2. Fill in the fields with | 3. The user is redirected to  |  3. Pass. |
+ |                   |    an existing user name   | the dashboard.                  |
+  |                  |    and password.           |
+ |                   |  3. Press the Sign in button.|
+| ----------------- | ------------------------- | ---------------------- | ---------------------- |
+|  Logout           | 1. When logged in, click  | 1. The login page is displayed. | 1. Pass.|
+|                 |       on the Logout button.   | 2. User redirected to the home page .| 2. Pass.|
+|                   |  2. On the logout page |                                          |   |
+ |                   |   click on the Sign Out button. |                  |                     
+| ----------------- | ------------------------- | ---------------------- | ---------------------- |
+
+

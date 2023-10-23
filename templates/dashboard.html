@@ -12,6 +12,7 @@
                 <ul class="list-group">
                     {% for booking in bookings %}
                         <li class="list-group-item">
+                            <p><strong>User:</strong> {{ booking.user }}</p>
                             <p><strong>Name:</strong> {{ booking.name }}</p>
                             <p><strong>Email:</strong> {{ booking.email }}</p>
                             <p><strong>Phone Number:</strong> {{ booking.phone_number }}</p>

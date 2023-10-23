@@ -40,7 +40,7 @@ def booking_success(request):
 
 @login_required
 def delete_booking(request, booking_id):
-    booking = get_object_or_404(Booking, pk=booking_id)
+    booking = get_object_or_404(Booking, pk=booking_id, user=request.user)
 
     if request.method == 'POST':
         if 'confirm' in request.POST:
@@ -54,7 +54,7 @@ def delete_booking(request, booking_id):
 
 @login_required
 def edit_booking(request, booking_id):
-    booking = get_object_or_404(Booking, pk=booking_id)
+    booking = get_object_or_404(Booking, pk=booking_id, user=request.user)
 
     if request.method == 'POST':
         form = BookingForm(request.POST, instance=booking)

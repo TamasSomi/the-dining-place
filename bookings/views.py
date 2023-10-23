@@ -38,6 +38,7 @@ def booking_success(request):
     return render(request, 'booking_success.html')
 
 
+@login_required
 def delete_booking(request, booking_id):
     booking = get_object_or_404(Booking, pk=booking_id)
 
@@ -51,6 +52,7 @@ def delete_booking(request, booking_id):
     return render(request, 'delete_booking.html', {'booking': booking})
 
 
+@login_required
 def edit_booking(request, booking_id):
     booking = get_object_or_404(Booking, pk=booking_id)
 

@@ -97,5 +97,33 @@ Used technologies during development:
 |                   |  2. On the logout page |                                          |   |
  |                   |   click on the Sign Out button. |                  |                     
 | ----------------- | ------------------------- | ---------------------- | ---------------------- |
-
-
+| Booking a table  | 1. Go to the dashboard by      | 1. Under the hero image   |   1. Pass.          |
+|                  | clicking on the Bookings button| a form displayed with fields| 2. Pass.       |
+|                  | 2. Fill the booking form with | of name, email, phone number,| 3. Pass.
+|                  | valid data.                    | date-time, pax, and comments.|
+|                  | 3. Press the submit button.    | 2. The form accepts only valid|
+|                   |                               | data. All fields required but |
+|                   |                               | the comments field.           |
+|                    |                              | 3. The user is redirected to |
+|                   |                               | the booking success page.     |
+| ----------------- | ---------------------------- | --------------------------- | ----------------- |
+| Edit a booking    | 1. Go to the dashboard by       | 1. The booking cards are | 1. Pass.         |
+|                   | clicking on the Bookings button.| displayed under the My   | 2. Pass.
+|                   | 2. Click edit on one of your    | Bookings title.          | 3. Pass.
+|                   | bookings.                       | 2. The user is redirected | 4. Pass.
+|                   | 3. Change the data.             | to the edit_booking page.  |
+|                   | 4. Press the save changes button.| 3. The user is abel to   |
+|                   |                                  | change the desired field|
+|                   |                                  | with valid data.          |
+|                   |                                  | 4. The user is redirected to |
+|                   |                                 | the dashboard, the card displayed|
+|                   |                                 | with the updated data. |  
+| ----------------- | ---------------------------- | --------------------------- | ----------------- |
+| Delete a booking  | 1. Go to the dashboard by       | 1. The booking cards are | 1. Pass.
+|                   | clicking on the Bookings button.| displayed under the My   | 2. Pass.
+|                   | 2. Click delete on one of your  | Bookings title.         |  3. Pass.
+|                   | bookings.                        | 2. The user is redirected |
+|                   | 3. Click on the Confirm Delete button.| to the delete_booking page.|
+|                   |                                   | 3. The user is redirected to the |
+|                   |                                   | dashboard. The deleted booking |
+|                   |                                   | is not displayed anymore.       |

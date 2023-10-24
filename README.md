@@ -77,54 +77,59 @@ Used technologies during development:
 
 ## Manual Test ##
 
-| Summary          | Steps                    | Expected Results       | Result                 |
-| --------------- | ------------------------- | ---------------------- | --------------------|
-|  Registration     | 1. Navigate to the        |1. The registration page is displayed. | 1. Pass.  |
-|                   | registration page.        |2. All fields accept valid input.      | 2. Pass.  |
-|                   | 2. Fill in all required.  |3. The user is redirected to the dashboard.| 3. Pass.|
-|                   | fields with valid data.    |                       |                      |
-|                   | 3. Click the register button.                   |                           |
-| --------------- | ------------------------- | ---------------------- | --------------------|
-|  Login       | 1. When logged out, click  | 1. The login page is displayed. | 1. Pass.|
-|                 |       on the Login button.   | 2. All fields accept valid input.| 2.Pass.|
-|                   |  2. Fill in the fields with | 3. The user is redirected to  |  3. Pass. |
- |                   |    an existing user name   | the dashboard.                  |
-  |                  |    and password.           |
- |                   |  3. Press the Sign in button.|
-| --------------- | ------------------------- | ---------------------- | --------------------|
-|  Logout           | 1. When logged in, click  | 1. The login page is displayed. | 1. Pass.|
-|                 |       on the Logout button.   | 2. User redirected to the home page .| 2. Pass.|
-|                   |  2. On the logout page |                                          |   |
- |                   |   click on the Sign Out button. |                  |                     
-| --------------- | ------------------------- | ---------------------- | --------------------|
-| Booking a table  | 1. Go to the dashboard by      | 1. Under the hero image   |   1. Pass.          |
-|                  | clicking on the Bookings button| a form displayed with fields| 2. Pass.       |
-|                  | 2. Fill the booking form with | of name, email, phone number,| 3. Pass.
-|                  | valid data.                    | date-time, pax, and comments.|
-|                  | 3. Press the submit button.    | 2. The form accepts only valid|
-|                   |                               | data. All fields required but |
-|                   |                               | the comments field.           |
-|                    |                              | 3. The user is redirected to |
-|                   |                               | the booking success page.     |
-| --------------- | ------------------------- | ---------------------- | --------------------|
-| Edit a booking    | 1. Go to the dashboard by       | 1. The booking cards are | 1. Pass.         |
-|                   | clicking on the Bookings button.| displayed under the My   | 2. Pass.
-|                   | 2. Click edit on one of your    | Bookings title.          | 3. Pass.
-|                   | bookings.                       | 2. The user is redirected | 4. Pass.
-|                   | 3. Change the data.             | to the edit_booking page.  |
-|                   | 4. Press the save changes button.| 3. The user is abel to   |
-|                   |                                  | change the desired field|
-|                   |                                  | with valid data.          |
-|                   |                                  | 4. The user is redirected to |
-|                   |                                 | the dashboard, the card displayed|
-|                   |                                 | with the updated data. |  
-| --------------- | ------------------------- | ---------------------- | --------------------|
-| Delete a booking  | 1. Go to the dashboard by       | 1. The booking cards are | 1. Pass.
-|                   | clicking on the Bookings button.| displayed under the My   | 2. Pass.
-|                   | 2. Click delete on one of your  | Bookings title.         |  3. Pass.
-|                   | bookings.                        | 2. The user is redirected |
-|                   | 3. Click on the Confirm Delete button.| to the delete_booking page.|
-|                   |                                   | 3. The user is redirected to the |
-|                   |                                   | dashboard. The deleted booking |
-|                   |                                   | is not displayed anymore.       |
-| --------------- | ------------------------- | ---------------------- | --------------------|
+|      Summary       |         Steps         |           Expected Results            |   Result   |
+| ------------------ | --------------------- | ------------------------------------- | ---------- |
+| Registration       | 1. Navigate to the   | 1. The registration page is displayed. |   1. Pass.  |
+|                    | registration page.   | 2. All fields accept valid input.     |   2. Pass.  |
+|                    | 2. Fill in all      | 3. The user is redirected to the      |   3. Pass.  |
+|                    | required fields     |    dashboard.                        |            |
+|                    | with valid data.     |                                        |            |
+|                    | 3. Click the         |                                        |            |
+|                    | register button.     |                                        |            |
+| ------------------ | --------------------- | ------------------------------------- | ---------- |
+| Login              | 1. When logged out,  | 1. The login page is displayed.       |   1. Pass.  |
+|                    | click on the Login   | 2. All fields accept valid input.     |   2. Pass.  |
+|                    | button.              | 3. The user is redirected to the     |   3. Pass.  |
+|                    | 2. Fill in the fields|    dashboard.                        |            |
+|                    | with an existing    |                                        |            |
+|                    | user name and        |                                        |            |
+|                    | password.            |                                        |            |
+|                    | 3. Press the Sign in |                                        |            |
+|                    | button.              |                                        |            |
+| ------------------ | --------------------- | ------------------------------------- | ---------- |
+| Logout             | 1. When logged in,   | 1. The login page is displayed.       |   1. Pass.  |
+|                    | click on the Logout  | 2. User redirected to the home page.  |   2. Pass.  |
+|                    | button.              |                                        |            |
+|                    | 2. On the logout page|                                        |            |
+|                    | click on the Sign    |                                        |            |
+|                    | Out button.          |                                        |            |
+| ------------------ | --------------------- | ------------------------------------- | ---------- |
+| Booking a table    | 1. Go to the          | 1. Under the hero image, a form       |   1. Pass.  |
+|                    | dashboard by clicking |    displayed with fields of name,    |   2. Pass.  |
+|                    | on the Bookings       |    email, phone number, date-time,  |   3. Pass.  |
+|                    | button.              |    pax, and comments.                |            |
+|                    | 2. Fill the booking   | 2. The form accepts only valid data.  |            |
+|                    | form with valid data.|    All fields required but the       |            |
+|                    | 3. Press the submit  |    comments field.                   |            |
+|                    | button.              | 3. The user is redirected to the     |            |
+|                    |                     |    booking success page.             |            |
+| ------------------ | --------------------- | ------------------------------------- | ---------- |
+| Edit a booking     | 1. Go to the          | 1. The booking cards are displayed   |   1. Pass.  |
+|                    | dashboard by clicking |    under the My Bookings title.      |   2. Pass.  |
+|                    | on the Bookings       | 2. The user is redirected to the     |   3. Pass.  |
+|                    | button.              |    edit_booking page.                 |   4. Pass.  |
+|                    | 2. Click edit on one  | 3. The user is able to change the    |            |
+|                    | of your bookings.     |    desired field with valid data.    |            |
+|                    | 3. Change the data.   | 4. The user is redirected to the     |            |
+|                    | 4. Press the save     |    dashboard, the card displayed     |            |
+|                    | changes button.      |    with the updated data.            |            |
+| ------------------ | --------------------- | ------------------------------------- | ---------- |
+| Delete a booking   | 1. Go to the          | 1. The booking cards are displayed   |   1. Pass.  |
+|                    | dashboard by clicking |    under the My Bookings title.      |   2. Pass.  |
+|                    | on the Bookings       | 2. The user is redirected to the     |   3. Pass.  |
+|                    | button.              |    delete_booking page.              |            |
+|                    | 2. Click delete on   | 3. The user is redirected to the     |            |
+|                    | one of your bookings. |    dashboard. The deleted booking    |            |
+|                    | 3. Click on the      |    is not displayed anymore.         |            |
+|                    | Confirm Delete button.|                                      |            |
+| ------------------ | --------------------- | ------------------------------------- | ---------- |

@@ -78,25 +78,25 @@ Used technologies during development:
 ## Manual Test ##
 
 | Summary          | Steps                    | Expected Results       | Result                 |
-| ----------------- | ------------------------- | ---------------------- | ---------------------- |
+| --------------- | ------------------------- | ---------------------- | --------------------|
 |  Registration     | 1. Navigate to the        |1. The registration page is displayed. | 1. Pass.  |
 |                   | registration page.        |2. All fields accept valid input.      | 2. Pass.  |
 |                   | 2. Fill in all required.  |3. The user is redirected to the dashboard.| 3. Pass.|
 |                   | fields with valid data.    |                       |                      |
 |                   | 3. Click the register button.                   |                           |
-| ----------------- | ------------------------- | ---------------------- | ---------------------- |
+| --------------- | ------------------------- | ---------------------- | --------------------|
 |  Login       | 1. When logged out, click  | 1. The login page is displayed. | 1. Pass.|
 |                 |       on the Login button.   | 2. All fields accept valid input.| 2.Pass.|
 |                   |  2. Fill in the fields with | 3. The user is redirected to  |  3. Pass. |
  |                   |    an existing user name   | the dashboard.                  |
   |                  |    and password.           |
  |                   |  3. Press the Sign in button.|
-| ----------------- | ------------------------- | ---------------------- | ---------------------- |
+| --------------- | ------------------------- | ---------------------- | --------------------|
 |  Logout           | 1. When logged in, click  | 1. The login page is displayed. | 1. Pass.|
 |                 |       on the Logout button.   | 2. User redirected to the home page .| 2. Pass.|
 |                   |  2. On the logout page |                                          |   |
  |                   |   click on the Sign Out button. |                  |                     
-| ----------------- | ------------------------- | ---------------------- | ---------------------- |
+| --------------- | ------------------------- | ---------------------- | --------------------|
 | Booking a table  | 1. Go to the dashboard by      | 1. Under the hero image   |   1. Pass.          |
 |                  | clicking on the Bookings button| a form displayed with fields| 2. Pass.       |
 |                  | 2. Fill the booking form with | of name, email, phone number,| 3. Pass.
@@ -106,7 +106,7 @@ Used technologies during development:
 |                   |                               | the comments field.           |
 |                    |                              | 3. The user is redirected to |
 |                   |                               | the booking success page.     |
-| ----------------- | ---------------------------- | --------------------------- | ----------------- |
+| --------------- | ------------------------- | ---------------------- | --------------------|
 | Edit a booking    | 1. Go to the dashboard by       | 1. The booking cards are | 1. Pass.         |
 |                   | clicking on the Bookings button.| displayed under the My   | 2. Pass.
 |                   | 2. Click edit on one of your    | Bookings title.          | 3. Pass.
@@ -118,7 +118,7 @@ Used technologies during development:
 |                   |                                  | 4. The user is redirected to |
 |                   |                                 | the dashboard, the card displayed|
 |                   |                                 | with the updated data. |  
-| ----------------- | ---------------------------- | --------------------------- | ----------------- |
+| --------------- | ------------------------- | ---------------------- | --------------------|
 | Delete a booking  | 1. Go to the dashboard by       | 1. The booking cards are | 1. Pass.
 |                   | clicking on the Bookings button.| displayed under the My   | 2. Pass.
 |                   | 2. Click delete on one of your  | Bookings title.         |  3. Pass.
@@ -127,3 +127,4 @@ Used technologies during development:
 |                   |                                   | 3. The user is redirected to the |
 |                   |                                   | dashboard. The deleted booking |
 |                   |                                   | is not displayed anymore.       |
+| --------------- | ------------------------- | ---------------------- | --------------------|

@@ -77,7 +77,7 @@ Used technologies during development:
 
 ## Manual Test ##
 
-|      Summary       |         Steps         |           Expected Results            |   Result   |
+|      Test Case       |         Steps         |           Expected Results            |   Result   |
 | ------------------ | --------------------- | ------------------------------------- | ---------- |
 | Registration       | 1. Navigate to the   | 1. The registration page is displayed. |   1. Pass.  |
 |                    | registration page.   | 2. All fields accept valid input.     |   2. Pass.  |
@@ -132,4 +132,14 @@ Used technologies during development:
 |                    | one of your bookings. |    dashboard. The deleted booking    |            |
 |                    | 3. Click on the      |    is not displayed anymore.         |            |
 |                    | Confirm Delete button.|                                      |            |
+| ------------------ | --------------------- | ------------------------------------- | ---------- |
+| Responsiveness Test| 1. Acces the website  | 1. The website is fully displayed with| 1. Pass.    |
+|                    | with a desktop computer.| all content and features accessible | 2. Pass.    |
+|                    | Open up the devtool and | and usable.                        |               |
+|                    | set all the available |  2. All elements function as expected|               |
+|                    | devices.                 | on both desktop and mobile versions.|             |
+|                    | 2. Verify that all content|                                     |            |
+|                    | and features are properly |                                     |            |
+|                    | displayed and usable on all|                                     |           |
+|                    | devices.                    |                                    |           |
 | ------------------ | --------------------- | ------------------------------------- | ---------- |

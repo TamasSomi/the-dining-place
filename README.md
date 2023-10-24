@@ -21,6 +21,7 @@ This page is a fictive restaurants page with registration and booking options. I
 
 
 ## Features ##
+(More screenshots of the app present in the Testing section)
 
 * User can register.
 
@@ -31,8 +32,10 @@ This page is a fictive restaurants page with registration and booking options. I
 * User can update or delete the booking.
 
 * User can not book a table twice for the same time.
+![Screenshot of double booking validation](/static/docs/double-booking-screenshot.png)
 
 * The booking form is validated, so the user can not book a table with any invalid data.
+![Screenshot of invalid input validation](/static/docs/invalid-data.png)
 
 
 ## Future Features ##
@@ -144,6 +147,12 @@ Used technologies during development:
 |                    | displayed and usable on all|                                     |           |
 |                    | devices.                    |                                    |           |
 | ------------------ | --------------------- | ------------------------------------- | ---------- |
+| Reading an existing booking | 1. Go to the dashboard by   | 1. The already existing | 1. Pass. |
+|                             | clicking on the Bookings button.| bookings are displayed|         |
+|                             |                              | under the Bookings title with|     |
+|                             |                          | all the necessary data. |               |
+| ------------------ | --------------------- | ------------------------------------- | ---------- |
+
 
 * Responsive screenshot of the home page.
 ![Responsive screenshot of the home page.](/static/docs/home-page.png)
@@ -176,6 +185,14 @@ Used technologies during development:
 
 * Screenshot of the Python Linter test (forms.py).
 ![Screenshot of the Python Linter test (forms.py).](/static/docs/forms-python-linter-test.png)
+
+* Lighthouse Test
+![Lighthouse test result screenshot](/static/docs/lighthouse-testresult.png)
+
+For some reason Lighthouse couldn't make screenshots during the tests which caused an error for performance test. 
+![Lighthouse test error screenshot](/static/docs/lighthouse-error.png) 
+
+
 
 
 ## Credit ##

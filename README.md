@@ -165,3 +165,17 @@ Used technologies during development:
 
 * Screenshot of the delete booking page.
 ![Screenshot of the delete booking page.](/static/docs/delete-booking.png)
+
+## Validator Testing ##
+
+* Screenshot of the Python Linter test (views.py).
+![Screenshot of the Python Linter test (views.py).](/static/docs/view-python-linter-test.png)
+
+* Screenshot of the Python Linter test (models.py).
+![Screenshot of the Python Linter test (models.py).](/static/docs/model-python-linter-test.png)
+
+* Screenshot of the Python Linter test (forms.py).
+![Screenshot of the Python Linter test (forms.py).](/static/docs/forms-python-linter-test.png)
+
+
+## Credit ##

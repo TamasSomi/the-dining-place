@@ -1,7 +1,7 @@
 # The Dining Place #
 
 [Click here to visit the live page.](https://the-dining-place-242cd25ddaad.herokuapp.com/)
-
+![Responsive screenshot of the home page.](/static/docs/home-page.png)
 
 This page is a fictive restaurants page with registration and booking options. It was built with learning purposes.
 
@@ -73,6 +73,7 @@ Used technologies during development:
 * [Django Allauth](https://docs.allauth.org/en/latest/#)
 * [Whitenoise](https://whitenoise.readthedocs.io/en/latest/#)
 * [Bootstrap](https://getbootstrap.com/)
+* [ElephantSql](https://www.elephantsql.com/)
 
 
 ## Manual Test ##
@@ -143,3 +144,24 @@ Used technologies during development:
 |                    | displayed and usable on all|                                     |           |
 |                    | devices.                    |                                    |           |
 | ------------------ | --------------------- | ------------------------------------- | ---------- |
+
+* Responsive screenshot of the home page.
+![Responsive screenshot of the home page.](/static/docs/home-page.png)
+
+* Responsive screenshot of the login page.
+![Responsive screenshot of the login page.](/static/docs/signin-page.png)
+
+* Responsive screenshot of the register page.
+![Responsive screenshot of the register page.](/static/docs/register-page.png)
+
+* Screenshot of the booking form.
+![Screenshot of the booking form.](/static/docs/booking-form.png)
+
+* Screenshot of the booking cards.
+![Screenshot of the booking cards.](/static/docs/booking-cards.png)
+
+* Screenshot of the edit booking page.
+![Screenshot of the edit booking page.](/static/docs/edit-booking.png)
+
+* Screenshot of the delete booking page.
+![Screenshot of the delete booking page.](/static/docs/delete-booking.png)

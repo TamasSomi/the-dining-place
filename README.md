@@ -1,7 +1,12 @@
 # The Dining Place #
 
 [Click here to visit the live page.](https://the-dining-place-242cd25ddaad.herokuapp.com/)
+
+[Click here to visit the Github repository.](https://github.com/TamasSomi/the-dining-place)
+
 ![Responsive screenshot of the home page.](/static/docs/home-page.png)
+
+[Click here to visit the Github repository.](https://github.com/TamasSomi/the-dining-place)
 
 This page is a fictive restaurants page with registration and booking options. It was built with learning purposes.
 
@@ -192,7 +197,31 @@ Used technologies during development:
 For some reason Lighthouse couldn't make screenshots during the tests which caused an error for performance test. 
 ![Lighthouse test error screenshot](/static/docs/lighthouse-error.png) 
 
+## Deployment ##
 
+### This website was deployed to Heroku and developed using github and gitpod ###
+
+* Steps for deployment:
+
+* Open the repository of the page. You can find the link in the readme.md.
+* To clone or fork the repo, click on the Gitpod (or any IDE you have installed) button.
+* Create your own repository and use git add . git commit -m "..." and git push commands.
+* Create a new app on Heroku.
+* Click on your app's name to enter the app dashboard.
+* Go to the "Deploy" tab.
+* In the "Deployment method" section, choose "GitHub."
+* Click the "Connect to GitHub" button.
+* Follow the prompts to authorize Heroku to access your GitHub account.
+* Search for and select your GitHub repository.
 
 
 ## Credit ##
+
+* Code Institute "I Think therefor I blog" walkthrough project helped me a lot whith setting up the prject and using django.
+* Code Institutes Bootstrap tutorials were a big help with designing the page effectively.
+* [Stackoverflow for calendar widget.](https://the-dining-place-242cd25ddaad.herokuapp.com/)
+* [Using primary key.](https://iqcode.com/code/python/pk-django)
+* [For django model form](https://docs.djangoproject.com/en/3.2/topics/forms/modelforms/)
+* [Istock for the stock image](https://www.istockphoto.com/)
+* [Font Awsome icons](https://fontawesome.com/icons)
+* [Validating the form](https://docs.djangoproject.com/en/4.2/ref/forms/validation/)

@@ -6,7 +6,6 @@
 
 ![Responsive screenshot of the home page.](/static/docs/home-page.png)
 
-[Click here to visit the Github repository.](https://github.com/TamasSomi/the-dining-place)
 
 This page is a fictive restaurants page with registration and booking options. It was built with learning purposes.
 
@@ -195,7 +194,11 @@ Used technologies during development:
 ![Lighthouse test result screenshot](/static/docs/lighthouse-testresult.png)
 
 For some reason Lighthouse couldn't make screenshots during the tests which caused an error for performance test. 
-![Lighthouse test error screenshot](/static/docs/lighthouse-error.png) 
+![Lighthouse test error screenshot](/static/docs/lighthouse-error.png)
+
+## Bugs ##
+
+I did not find any bugs during manual test.
 
 ## Deployment ##
 
@@ -225,3 +228,5 @@ For some reason Lighthouse couldn't make screenshots during the tests which caus
 * [Istock for the stock image](https://www.istockphoto.com/)
 * [Font Awsome icons](https://fontawesome.com/icons)
 * [Validating the form](https://docs.djangoproject.com/en/4.2/ref/forms/validation/)
+* [Django hidden input field](http://www.semicolom.com/blog/add-a-hidden-field-to-a-django-form/)
+* [Django input field initial value](https://stackoverflow.com/questions/604266/django-set-default-form-values)

@@ -48,6 +48,8 @@ This page is a fictive restaurants page with registration and booking options. I
 
 * Email sent with the details after booking a table.
 
+* Edit button will not show on expired bookings.
+
 
 ## Planning ##
 
@@ -196,13 +198,30 @@ Used technologies during development:
 For some reason Lighthouse couldn't make screenshots during the tests which caused an error for performance test. 
 ![Lighthouse test error screenshot](/static/docs/lighthouse-error.png)
 
+## Security Features ##
+
+* User is authenticated and can not edit any booking without logging in.
+* Just the user created the booking can access and manipulate existing bookings.
+* A user can not see other user's details and bookings.
+
 ## Bugs ##
 
-I did not find any bugs during manual test.
+### User could book a table twice for the same date and time. ###
+
+- Solved by creating the clean function that checks if there is an existing booking with the user's
+and the date and time and raises a ValidationError.
+
+### User could book a table for less then one person. ###
+
+- Solved by creating the validate_pax function which checks the value of the field and raises a ValidationError if needed.
+
+### User could book a table in the passt. ###
+
+- Solved by creating the validate_datetime function which checks if the time now is less than the time for the booking and raises an error if needed.
 
 ## Deployment ##
 
-### This website was deployed to Heroku and developed using github and gitpod ###
+### This website was deployed to Heroku and developed using Github and Gitpod ###
 
 * Steps for deployment:
 
@@ -220,8 +239,9 @@ I did not find any bugs during manual test.
 
 ## Credit ##
 
-* Code Institute "I Think therefor I blog" walkthrough project helped me a lot whith setting up the prject and using django.
-* Code Institutes Bootstrap tutorials were a big help with designing the page effectively.
+* Code Institute "I Think therefor I blog" walkthrough project helped me a lot with setting up the project and using Django.
+* Code Institute's Bootstrap tutorials were a big help with designing the page effectively.
+* [The Code Insitute Github Agile Tool video](https://www.youtube.com/watch?v=U_dMihBgUNY)
 * [Stackoverflow for calendar widget.](https://the-dining-place-242cd25ddaad.herokuapp.com/)
 * [Using primary key.](https://iqcode.com/code/python/pk-django)
 * [For django model form](https://docs.djangoproject.com/en/3.2/topics/forms/modelforms/)
